@@ -33,3 +33,5 @@ jobs:
           path: dist
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 1800000 # 30 min; the default 10 min timed out on this large site
